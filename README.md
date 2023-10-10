@@ -55,9 +55,9 @@ The `swagger.json` file is your API definition written in OpenAPI 3.0. This file
 
 To generate the server code, run:
 
-\`\`\`bash
-docker-compose up
-\`\`\`
+```bash
+docker-compose up --build
+```
 
 This will build the Docker image and run the container, triggering the Swagger Codegen process.
 
