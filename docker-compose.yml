@@ -1,0 +1,6 @@
+version: '3'
+services:
+  swagger-codegen:
+    build: .
+    volumes:
+      - ./generated-server:/usr/src/generated
