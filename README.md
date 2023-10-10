@@ -22,9 +22,6 @@ To get started, make sure you have Docker and Docker Compose installed. If you d
 
 The Dockerfile sets up an image based on OpenJDK 11 and downloads the Swagger Codegen CLI. The CLI is used to generate the server code.
 
-\`\`\`Dockerfile
-# Dockerfile content here...
-\`\`\`
 
 Here's what each section does:
 - `FROM openjdk:11`: Use OpenJDK 11 as the base image.
@@ -40,10 +37,6 @@ Here's what each section does:
 
 The `docker-compose.yml` file helps you to define and run multi-container Docker applications. In our case, it's just one service that builds using the provided Dockerfile.
 
-\`\`\`yaml
-# docker-compose.yml content here...
-\`\`\`
-
 - `version: '3'`: Specifies the Docker Compose file version.
 - `services`: List of all services that make up the project.
 - `build: .`: Specifies the build context path.
@@ -55,9 +48,6 @@ The `docker-compose.yml` file helps you to define and run multi-container Docker
 
 The `swagger.json` file is your API definition written in OpenAPI 3.0. This file is used by Swagger Codegen to generate server-side code.
 
-\`\`\`json
-# Partial swagger.json content here...
-\`\`\`
 
 ---
 
